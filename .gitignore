@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local eval output
+benchmark/last_results.json
+
+# Durable verdict cache (regenerable; can be large)
+benchmark/.verdict_cache.jsonl
+
+# Generated benchmark sets (regenerable)
+benchmark/answers_generated.jsonl
+benchmark/answers_hard.jsonl
+benchmark/.combined.jsonl

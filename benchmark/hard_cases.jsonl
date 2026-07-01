@@ -1,0 +1,61 @@
+{"id": "num-001", "category": "numeric_error", "split": "dev", "claim": "The speed of light is approximately 30,000 kilometres per second.", "gold": "contradicted", "note": "Off by 10x; real value ~299,792 km/s."}
+{"id": "num-002", "category": "numeric_error", "split": "dev", "claim": "Water boils at 100 degrees Fahrenheit at sea level.", "gold": "contradicted", "note": "Unit confusion; 100C / 212F."}
+{"id": "num-003", "category": "numeric_error", "split": "dev", "claim": "The adult human body has 106 bones.", "gold": "contradicted", "note": "206, not 106."}
+{"id": "num-004", "category": "numeric_error", "split": "test", "claim": "A standard marathon is 42.195 metres long.", "gold": "contradicted", "note": "Kilometres, not metres. Unit error."}
+{"id": "num-005", "category": "numeric_error", "split": "test", "claim": "The Pacific Ocean covers roughly 6 million square kilometres.", "gold": "contradicted", "note": "~165 million km². Massive magnitude error."}
+{"id": "cite-001", "category": "fabricated_citation", "split": "dev", "claim": "According to the 2019 Stanford study 'Neural Scaling Collapse' by Chen et al., models degrade above one trillion parameters.", "gold": "contradicted", "note": "Fabricated paper. Needs source-existence check."}
+{"id": "cite-002", "category": "fabricated_citation", "split": "dev", "claim": "The Supreme Court case Whitfield v. Meridian Health (2021) established a federal right to algorithmic transparency.", "gold": "contradicted", "note": "Fabricated case — career-ending in a legal memo."}
+{"id": "cite-003", "category": "fabricated_citation", "split": "test", "claim": "A 2022 Nature paper by Okonkwo and Reyes presented a proof that P equals NP.", "gold": "contradicted", "note": "Fabricated paper asserting a false result."}
+{"id": "cite-004", "category": "fabricated_citation", "split": "test", "claim": "The WHO's 2020 Global Hydration Guidelines require adults to drink exactly three litres of water daily.", "gold": "contradicted", "note": "Fabricated guideline; no such WHO document."}
+{"id": "stale-001", "category": "stale_fact", "split": "dev", "claim": "Twitter is the current official name of the social platform owned by X Corp.", "gold": "contradicted", "note": "Renamed to X."}
+{"id": "stale-002", "category": "stale_fact", "split": "dev", "claim": "Pluto is officially classified as the ninth planet of the Solar System.", "gold": "contradicted", "note": "Reclassified as a dwarf planet in 2006."}
+{"id": "stale-003", "category": "stale_fact", "split": "test", "claim": "The United Kingdom is currently a member state of the European Union.", "gold": "contradicted", "note": "Left the EU in 2020."}
+{"id": "causal-001", "category": "false_causal", "split": "dev", "claim": "Vaccines cause autism.", "gold": "contradicted", "note": "Debunked false causal claim."}
+{"id": "causal-002", "category": "false_causal", "split": "dev", "claim": "Cracking your knuckles causes arthritis.", "gold": "contradicted", "note": "No evidence of causation."}
+{"id": "causal-003", "category": "false_causal", "split": "test", "claim": "Eating sugar is the direct cause of hyperactivity in children.", "gold": "contradicted", "note": "Controlled studies find no such causal link."}
+{"id": "subtle-001", "category": "subtle_false", "split": "dev", "claim": "The Great Wall of China is visible from the Moon with the naked eye.", "gold": "contradicted", "note": "Popular myth; false."}
+{"id": "subtle-002", "category": "subtle_false", "split": "dev", "claim": "Mount Everest is the tallest mountain on Earth measured from base to summit.", "gold": "contradicted", "note": "Mauna Kea is tallest base-to-summit; Everest is highest above sea level."}
+{"id": "subtle-003", "category": "subtle_false", "split": "test", "claim": "Humans use only ten percent of their brains.", "gold": "contradicted", "note": "Neuro-myth."}
+{"id": "subtle-004", "category": "subtle_false", "split": "test", "claim": "Goldfish have a memory span of only three seconds.", "gold": "contradicted", "note": "Myth; goldfish remember for months."}
+{"id": "subtle-005", "category": "subtle_false", "split": "test", "claim": "The blood in human veins is blue until it is exposed to oxygen.", "gold": "contradicted", "note": "Blood is always red; veins look blue through skin."}
+{"id": "true-001", "category": "true_control", "split": "dev", "claim": "Water boils at 100 degrees Celsius at sea level.", "gold": "supported", "note": "True. Must NOT be flagged."}
+{"id": "true-002", "category": "true_control", "split": "dev", "claim": "The speed of light is approximately 300,000 kilometres per second.", "gold": "supported", "note": "True (rounded)."}
+{"id": "true-003", "category": "true_control", "split": "dev", "claim": "The adult human body has 206 bones.", "gold": "supported", "note": "True."}
+{"id": "true-004", "category": "true_control", "split": "dev", "claim": "Paris is the capital of France.", "gold": "supported", "note": "True."}
+{"id": "true-005", "category": "true_control", "split": "test", "claim": "The Eiffel Tower was completed in 1889.", "gold": "supported", "note": "True."}
+{"id": "true-006", "category": "true_control", "split": "test", "claim": "The Earth completes one orbit of the Sun in approximately 365.25 days.", "gold": "supported", "note": "True."}
+{"id": "true-007", "category": "true_control", "split": "test", "claim": "The Pacific is the largest ocean on Earth.", "gold": "supported", "note": "True."}
+{"id": "op-001", "category": "opinion", "split": "dev", "claim": "Paris is the most beautiful city in the world.", "gold": "not_checkable", "note": "Judgment; never flag."}
+{"id": "op-002", "category": "opinion", "split": "dev", "claim": "AI will probably transform most industries within the next decade.", "gold": "not_checkable", "note": "Prediction."}
+{"id": "op-003", "category": "opinion", "split": "test", "claim": "Remote work is better than working from an office.", "gold": "not_checkable", "note": "Opinion."}
+{"id": "op-004", "category": "opinion", "split": "test", "claim": "Jazz is a more sophisticated musical genre than pop.", "gold": "not_checkable", "note": "Aesthetic judgment."}
+{"id": "unv-001", "category": "unverifiable", "split": "dev", "claim": "A cafe called Aurora opened on Rua da Prata in Lisbon in 2014.", "gold": "unverified", "note": "Obscure; honest answer is 'unverified'."}
+{"id": "unv-002", "category": "unverifiable", "split": "test", "claim": "A hardware startup named Tessellate Labs raised a seed round in Tallinn in 2017.", "gold": "unverified", "note": "Obscure; no accessible evidence expected."}
+{"id": "fc-101", "category": "false_causal", "split": "dev", "claim": "Reading in dim light permanently damages your eyesight.", "gold": "contradicted", "note": "Common false causal belief."}
+{"id": "fc-102", "category": "false_causal", "split": "test", "claim": "Going outside with wet hair causes you to catch a cold.", "gold": "contradicted", "note": "Colds are caused by viruses, not cold/wet hair."}
+{"id": "fc-103", "category": "false_causal", "split": "dev", "claim": "Eating late at night inherently causes weight gain regardless of total calories.", "gold": "contradicted", "note": "Total energy balance, not timing, drives weight."}
+{"id": "fc-104", "category": "false_causal", "split": "test", "claim": "Vaccines weaken the body's natural immune system.", "gold": "contradicted", "note": "False; vaccines train the immune system."}
+{"id": "fc-105", "category": "false_causal", "split": "dev", "claim": "Drinking coffee stunts your growth.", "gold": "contradicted", "note": "No evidence coffee affects height."}
+{"id": "fc-106", "category": "false_causal", "split": "test", "claim": "Shaving makes hair grow back thicker and darker.", "gold": "contradicted", "note": "Shaving does not change hair thickness."}
+{"id": "sf-101", "category": "subtle_false", "split": "dev", "claim": "Bulls are enraged by the color red.", "gold": "contradicted", "note": "Bulls are red-green colorblind; they react to motion."}
+{"id": "sf-102", "category": "subtle_false", "split": "test", "claim": "Bats are blind.", "gold": "contradicted", "note": "Bats can see; many also use echolocation."}
+{"id": "sf-103", "category": "subtle_false", "split": "dev", "claim": "Humans lose most of their body heat through their head.", "gold": "contradicted", "note": "Heat loss is roughly proportional to exposed surface area."}
+{"id": "sf-104", "category": "subtle_false", "split": "test", "claim": "Different regions of the tongue are responsible for different tastes.", "gold": "contradicted", "note": "The tongue map is a myth."}
+{"id": "sf-105", "category": "subtle_false", "split": "dev", "claim": "Napoleon Bonaparte was unusually short for his era.", "gold": "contradicted", "note": "He was about average height; the myth comes from unit confusion."}
+{"id": "sf-106", "category": "subtle_false", "split": "test", "claim": "Glass is a slow-moving liquid that visibly flows over centuries.", "gold": "contradicted", "note": "Glass is an amorphous solid; old window panes are not proof of flow."}
+{"id": "sf-107", "category": "subtle_false", "split": "dev", "claim": "Lightning never strikes the same place twice.", "gold": "contradicted", "note": "Tall structures are struck repeatedly."}
+{"id": "sf-108", "category": "subtle_false", "split": "test", "claim": "You must wait 24 hours before reporting a missing person.", "gold": "contradicted", "note": "No such waiting-period requirement."}
+{"id": "ne-101", "category": "numeric_error", "split": "dev", "claim": "There are 100 minutes in an hour.", "gold": "contradicted", "note": "60 minutes."}
+{"id": "ne-102", "category": "numeric_error", "split": "test", "claim": "Sound travels faster than light.", "gold": "contradicted", "note": "Light is vastly faster."}
+{"id": "cite-101", "category": "fabricated_citation", "split": "dev", "claim": "A 2018 Harvard study published in The Lancet proved that coffee cures type 2 diabetes.", "gold": "contradicted", "note": "Fabricated study and overstated claim."}
+{"id": "cite-102", "category": "fabricated_citation", "split": "test", "claim": "The 2020 MIT paper 'Quantum Transformers' by Alvarez demonstrated room-temperature quantum computing.", "gold": "contradicted", "note": "Fabricated paper and result."}
+{"id": "stale-101", "category": "stale_fact", "split": "dev", "claim": "The Space Shuttle is NASA's current vehicle for launching astronauts.", "gold": "contradicted", "note": "Shuttle retired in 2011."}
+{"id": "stale-102", "category": "stale_fact", "split": "test", "claim": "Queen Elizabeth II is the current reigning monarch of the United Kingdom.", "gold": "contradicted", "note": "She died in 2022; Charles III reigns."}
+{"id": "tc-101", "category": "true_control", "split": "dev", "claim": "Honey is produced by bees.", "gold": "supported", "note": "True."}
+{"id": "tc-102", "category": "true_control", "split": "test", "claim": "The human heart has four chambers.", "gold": "supported", "note": "True."}
+{"id": "tc-103", "category": "true_control", "split": "dev", "claim": "Mount Everest is located in the Himalayas.", "gold": "supported", "note": "True."}
+{"id": "tc-104", "category": "true_control", "split": "test", "claim": "Water is composed of hydrogen and oxygen.", "gold": "supported", "note": "True."}
+{"id": "tc-105", "category": "true_control", "split": "dev", "claim": "The Sun is a star.", "gold": "supported", "note": "True."}
+{"id": "op-101", "category": "opinion", "split": "dev", "claim": "Cats make better pets than dogs.", "gold": "not_checkable", "note": "Preference."}
+{"id": "op-102", "category": "opinion", "split": "test", "claim": "Summer is the best season of the year.", "gold": "not_checkable", "note": "Preference."}
+{"id": "uv-101", "category": "unverifiable", "split": "dev", "claim": "A bakery named Flour and Stone on Elm Street sold 212 croissants last Tuesday.", "gold": "unverified", "note": "No accessible evidence."}

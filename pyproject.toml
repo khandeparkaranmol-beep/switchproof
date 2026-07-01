@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "second-opinion-ai"
+version = "0.1.0"
+description = "Grounded, calibrated verification for AI answers — checks facts, sources, math, and recency, and never bluffs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Anmol Khandeparkar" }]
+keywords = ["ai", "llm", "fact-checking", "hallucination", "verification", "evaluation", "trust"]
+dependencies = ["anthropic>=0.39.0"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Bring your own key: the package ships NO credentials. Each user sets ANTHROPIC_API_KEY
+# (env var or a local .env). No key = mock mode, so it runs out of the box for a taste.
+
+[project.urls]
+Homepage = "https://github.com/anmolkhandeparkar/second-opinion"
+Source = "https://github.com/anmolkhandeparkar/second-opinion"
+
+[project.scripts]
+second-opinion = "second_opinion.cli:main"
+second-opinion-web = "second_opinion.web:main"
+second-opinion-doctor = "second_opinion.doctor:main"
+
+[tool.setuptools.packages.find]
+include = ["second_opinion*"]

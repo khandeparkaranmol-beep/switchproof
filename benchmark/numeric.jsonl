@@ -1,0 +1,12 @@
+{"id": "num-c-001", "category": "numeric", "split": "dev", "claim": "15% of 2.3 million is 3.45 million.", "gold": "contradicted", "note": "Wrong: 15% of 2.3M is 345,000."}
+{"id": "num-c-002", "category": "numeric", "split": "dev", "claim": "25% of 80 is 20.", "gold": "supported", "note": "Correct."}
+{"id": "num-c-003", "category": "numeric", "split": "test", "claim": "20% of 150 is 40.", "gold": "contradicted", "note": "Wrong: it is 30."}
+{"id": "num-c-004", "category": "numeric", "split": "dev", "claim": "12 times 12 is 154.", "gold": "contradicted", "note": "Wrong: 144."}
+{"id": "num-c-005", "category": "numeric", "split": "test", "claim": "7 times 8 is 56.", "gold": "supported", "note": "Correct."}
+{"id": "num-c-006", "category": "numeric", "split": "dev", "claim": "The sum of 45 and 55 is 100.", "gold": "supported", "note": "Correct."}
+{"id": "num-c-007", "category": "numeric", "split": "test", "claim": "150 minus 37 is 123.", "gold": "contradicted", "note": "Wrong: 113."}
+{"id": "num-c-008", "category": "numeric", "split": "dev", "claim": "1000 divided by 8 is 125.", "gold": "supported", "note": "Correct."}
+{"id": "num-c-009", "category": "numeric", "split": "test", "claim": "Half of 250 is 120.", "gold": "contradicted", "note": "Wrong: 125."}
+{"id": "num-c-010", "category": "numeric", "split": "dev", "claim": "9 squared is 81.", "gold": "supported", "note": "Correct."}
+{"id": "num-c-011", "category": "numeric", "split": "test", "claim": "2 to the power of 10 is 1024.", "gold": "supported", "note": "Correct."}
+{"id": "num-c-012", "category": "numeric", "split": "dev", "claim": "30% of 90 is 36.", "gold": "contradicted", "note": "Wrong: 27."}

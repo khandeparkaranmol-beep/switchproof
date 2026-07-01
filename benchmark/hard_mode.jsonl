@@ -1,0 +1,24 @@
+{"id": "ot-001", "category": "obscure_true", "split": "dev", "claim": "Octopuses have three hearts.", "gold": "supported", "note": "True but surprising — a false-flag stressor."}
+{"id": "ot-002", "category": "obscure_true", "split": "dev", "claim": "Honey does not spoil and can remain edible for thousands of years.", "gold": "supported", "note": "True."}
+{"id": "ot-003", "category": "obscure_true", "split": "test", "claim": "Wombats produce cube-shaped droppings.", "gold": "supported", "note": "True."}
+{"id": "ot-004", "category": "obscure_true", "split": "dev", "claim": "A group of flamingos is called a flamboyance.", "gold": "supported", "note": "True."}
+{"id": "ot-005", "category": "obscure_true", "split": "test", "claim": "Bananas are botanically classified as berries.", "gold": "supported", "note": "True but counterintuitive."}
+{"id": "ot-006", "category": "obscure_true", "split": "dev", "claim": "The Eiffel Tower can grow more than 10 centimetres taller in summer due to thermal expansion.", "gold": "supported", "note": "True."}
+{"id": "ot-007", "category": "obscure_true", "split": "test", "claim": "Sea otters sometimes hold hands while sleeping so they do not drift apart.", "gold": "supported", "note": "True."}
+{"id": "ot-008", "category": "obscure_true", "split": "dev", "claim": "Scotland's national animal is the unicorn.", "gold": "supported", "note": "True."}
+{"id": "ot-009", "category": "obscure_true", "split": "test", "claim": "Tardigrades can survive exposure to the vacuum of space.", "gold": "supported", "note": "True."}
+{"id": "ot-010", "category": "obscure_true", "split": "dev", "claim": "The smell of rain hitting dry ground is called petrichor.", "gold": "supported", "note": "True."}
+{"id": "ot-011", "category": "obscure_true", "split": "test", "claim": "Octopuses have blue blood.", "gold": "supported", "note": "True; copper-based hemocyanin."}
+{"id": "ot-012", "category": "obscure_true", "split": "dev", "claim": "The pula is the official currency of Botswana.", "gold": "supported", "note": "True."}
+{"id": "pf-001", "category": "plausible_fabrication", "split": "dev", "claim": "Nintendo was originally founded in 1889 as a textile manufacturer.", "gold": "contradicted", "note": "False; it made playing cards. Plausible, not famous."}
+{"id": "pf-002", "category": "plausible_fabrication", "split": "test", "claim": "The Boeing 797 entered commercial service in 2024.", "gold": "contradicted", "note": "False; no 797 exists."}
+{"id": "pf-003", "category": "plausible_fabrication", "split": "dev", "claim": "Finland introduced a nationwide four-hour workday for public-sector workers in 2023.", "gold": "contradicted", "note": "False; fabricated policy."}
+{"id": "pf-004", "category": "plausible_fabrication", "split": "test", "claim": "Livermorium is the radioactive element commonly used in household smoke detectors.", "gold": "contradicted", "note": "False; smoke detectors use americium."}
+{"id": "pf-005", "category": "plausible_fabrication", "split": "dev", "claim": "Mount Kilimanjaro is the highest mountain in South Africa.", "gold": "contradicted", "note": "False; it is in Tanzania."}
+{"id": "pf-006", "category": "plausible_fabrication", "split": "test", "claim": "The average cumulus cloud weighs roughly 80 kilograms.", "gold": "contradicted", "note": "False; a cumulus cloud weighs hundreds of tons."}
+{"id": "pf-007", "category": "plausible_fabrication", "split": "dev", "claim": "Venus is the closest planet to the Sun.", "gold": "contradicted", "note": "False; Mercury is."}
+{"id": "pf-008", "category": "plausible_fabrication", "split": "test", "claim": "The Great Barrier Reef lies off the coast of Chile.", "gold": "contradicted", "note": "False; it is off Australia."}
+{"id": "pf-009", "category": "plausible_fabrication", "split": "dev", "claim": "Esperanto is an official working language of the European Union.", "gold": "contradicted", "note": "False."}
+{"id": "pf-010", "category": "plausible_fabrication", "split": "test", "claim": "The novel Nineteen Eighty-Four was written by Aldous Huxley.", "gold": "contradicted", "note": "False; George Orwell wrote it."}
+{"id": "pf-011", "category": "plausible_fabrication", "split": "dev", "claim": "The human skeleton completely regenerates itself every six months.", "gold": "contradicted", "note": "False; bone turnover takes about a decade."}
+{"id": "pf-012", "category": "plausible_fabrication", "split": "test", "claim": "Canberra was chosen as Australia's capital because it was the largest city in the country at the time.", "gold": "contradicted", "note": "False; it was a purpose-built compromise between Sydney and Melbourne."}

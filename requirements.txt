@@ -1,0 +1,3 @@
+# Core runs with the standard library only (mock mode).
+# For real mode, install:
+anthropic>=0.39.0

@@ -1,0 +1,10 @@
+{"id": "temp-001", "category": "temporal", "split": "dev", "claim": "Queen Elizabeth II is the current reigning monarch of the United Kingdom.", "gold": "contradicted", "note": "Outdated: she died in 2022; Charles III reigns."}
+{"id": "temp-002", "category": "temporal", "split": "test", "claim": "The Space Shuttle is NASA's current vehicle for launching astronauts.", "gold": "contradicted", "note": "Outdated: retired 2011."}
+{"id": "temp-003", "category": "temporal", "split": "dev", "claim": "Twitter is the current official name of the social platform owned by X Corp.", "gold": "contradicted", "note": "Outdated: renamed X."}
+{"id": "temp-004", "category": "temporal", "split": "test", "claim": "The United Kingdom is currently a member state of the European Union.", "gold": "contradicted", "note": "Outdated: left the EU."}
+{"id": "temp-005", "category": "temporal", "split": "dev", "claim": "Pluto is currently classified as a full planet of the Solar System.", "gold": "contradicted", "note": "Outdated: dwarf planet since 2006."}
+{"id": "temp-006", "category": "temporal", "split": "test", "claim": "Internet Explorer is currently Microsoft's flagship web browser.", "gold": "contradicted", "note": "Outdated: discontinued; Edge is current."}
+{"id": "temp-007", "category": "temporal", "split": "dev", "claim": "Tokyo is currently the capital of Japan.", "gold": "supported", "note": "Still true."}
+{"id": "temp-008", "category": "temporal", "split": "test", "claim": "The euro is currently the official currency of Germany.", "gold": "supported", "note": "Still true."}
+{"id": "temp-009", "category": "temporal", "split": "dev", "claim": "There are currently eight recognised planets in the Solar System.", "gold": "supported", "note": "Still true (post-2006)."}
+{"id": "temp-010", "category": "temporal", "split": "test", "claim": "English is currently one of the official languages of Canada.", "gold": "supported", "note": "Still true."}

@@ -24,8 +24,8 @@ classifiers = [
 # (env var or a local .env). No key = mock mode, so it runs out of the box for a taste.
 
 [project.urls]
-Homepage = "https://github.com/anmolkhandeparkar/second-opinion"
-Source = "https://github.com/anmolkhandeparkar/second-opinion"
+Homepage = "https://github.com/khandeparkaranmol-beep/second-opinion"
+Source = "https://github.com/khandeparkaranmol-beep/second-opinion"
 
 [project.scripts]
 second-opinion = "second_opinion.cli:main"

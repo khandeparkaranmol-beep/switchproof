@@ -1,0 +1,1483 @@
+{
+  "generated_at": "2026-07-02T18:10:45",
+  "mode": "real",
+  "mock_models": [],
+  "task": {
+    "name": "Banking77 \u2014 customer-support intent classification",
+    "n": 900,
+    "n_intents": 77
+  },
+  "models": {
+    "frontier": {
+      "name": "claude-sonnet-5",
+      "mock": false,
+      "price_in": 3.0,
+      "price_out": 15.0,
+      "avg_in_tokens": 851.2455555555556,
+      "avg_out_tokens": 10.376666666666667,
+      "avg_latency_ms": 1612.0
+    },
+    "open": {
+      "name": "llama-3.1-8b-instant",
+      "mock": false,
+      "price_in": 0.05,
+      "price_out": 0.08,
+      "avg_in_tokens": 485.9588888888889,
+      "avg_out_tokens": 4.717777777777778,
+      "avg_latency_ms": 244.9
+    }
+  },
+  "assumptions": {
+    "monthly_calls": 1000000,
+    "frontier_cost_per_call": 0.0027093866666666666,
+    "open_cost_per_call": 2.4675366666666668e-05
+  },
+  "headline": {
+    "verdict": "SAFE_HYBRID",
+    "agreement": {
+      "k": 594,
+      "n": 900,
+      "rate": 0.66,
+      "low": 0.6284293334158177,
+      "high": 0.6902105698592695
+    },
+    "monthly_savings": 1246.8992482222225,
+    "monthly_savings_all": 2684.7113,
+    "monthly_savings_hybrid": 1246.8992482222225,
+    "annual_savings": 14962.79097866667,
+    "savings_pct": 0.4602145805036647,
+    "traffic_switchable_pct": 0.46444444444444444,
+    "quality_after_routing": 0.7922222222222223,
+    "all_frontier_acc": 0.7633333333333333,
+    "all_open_acc": 0.6177777777777778
+  },
+  "quality": {
+    "agreement": {
+      "k": 594,
+      "n": 900,
+      "rate": 0.66,
+      "low": 0.6284293334158177,
+      "high": 0.6902105698592695
+    },
+    "frontier_acc": {
+      "k": 687,
+      "n": 900,
+      "rate": 0.7633333333333333,
+      "low": 0.7344815533015688,
+      "high": 0.7899466208386786
+    },
+    "open_acc": {
+      "k": 556,
+      "n": 900,
+      "rate": 0.6177777777777778,
+      "low": 0.585593316215356,
+      "high": 0.6489610570288052
+    },
+    "quality_after_routing": 0.7922222222222223
+  },
+  "cost": {
+    "monthly_frontier": 2709.3866666666668,
+    "monthly_open": 24.67536666666667,
+    "monthly_hybrid": 1462.4874184444443,
+    "frontier_per_call": 0.0027093866666666666,
+    "open_per_call": 2.4675366666666668e-05
+  },
+  "routing": {
+    "route_threshold": 0.85,
+    "min_slice_n": 10,
+    "weak_intents": [
+      "Refund_not_showing_up",
+      "beneficiary_not_allowed",
+      "cancel_transfer",
+      "card_about_to_expire",
+      "card_delivery_estimate",
+      "card_linking",
+      "card_payment_fee_charged",
+      "card_payment_not_recognised",
+      "card_payment_wrong_exchange_rate",
+      "card_swallowed",
+      "cash_withdrawal_charge",
+      "cash_withdrawal_not_recognised",
+      "contactless_not_working",
+      "declined_card_payment",
+      "declined_cash_withdrawal",
+      "direct_debit_payment_not_recognised",
+      "exchange_charge",
+      "exchange_via_app",
+      "extra_charge_on_statement",
+      "failed_transfer",
+      "fiat_currency_support",
+      "get_disposable_virtual_card",
+      "getting_spare_card",
+      "getting_virtual_card",
+      "pending_card_payment",
+      "pending_cash_withdrawal",
+      "pending_top_up",
+      "pending_transfer",
+      "pin_blocked",
+      "reverted_card_payment?",
+      "supported_cards_and_currencies",
+      "top_up_by_bank_transfer_charge",
+      "top_up_by_card_charge",
+      "top_up_reverted",
+      "topping_up_by_card",
+      "transfer_into_account",
+      "transfer_not_received_by_recipient",
+      "verify_top_up",
+      "virtual_card_not_working",
+      "why_verify_identity",
+      "wrong_amount_of_cash_received"
+    ],
+    "weak_share": 0.5355555555555556,
+    "strong_share": 0.46444444444444444,
+    "n_switched_by_accuracy": 16
+  },
+  "intents": [
+    {
+      "intent": "cancel_transfer",
+      "n": 12,
+      "agreement": 0.0,
+      "agree_low": 0.0,
+      "agree_high": 0.2425007574992425,
+      "frontier_acc": 1.0,
+      "open_acc": 0.0,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "card_arrival",
+      "n": 11,
+      "agreement": 0.0,
+      "agree_low": 2.7755575615628914e-17,
+      "agree_high": 0.2588400172488141,
+      "frontier_acc": 0.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "exchange_via_app",
+      "n": 12,
+      "agreement": 0.16666666666666666,
+      "agree_low": 0.04696414761482223,
+      "agree_high": 0.44803635738467273,
+      "frontier_acc": 0.8333333333333334,
+      "open_acc": 0.16666666666666666,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "direct_debit_payment_not_recognised",
+      "n": 13,
+      "agreement": 0.23076923076923078,
+      "agree_low": 0.08179379092465713,
+      "agree_high": 0.5025687399512693,
+      "frontier_acc": 0.3076923076923077,
+      "open_acc": 0.15384615384615385,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "balance_not_updated_after_cheque_or_cash_deposit",
+      "n": 12,
+      "agreement": 0.25,
+      "agree_low": 0.08894003962896138,
+      "agree_high": 0.53231033912066,
+      "frontier_acc": 0.16666666666666666,
+      "open_acc": 0.6666666666666666,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "card_payment_not_recognised",
+      "n": 12,
+      "agreement": 0.25,
+      "agree_low": 0.08894003962896138,
+      "agree_high": 0.53231033912066,
+      "frontier_acc": 0.6666666666666666,
+      "open_acc": 0.16666666666666666,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "topping_up_by_card",
+      "n": 12,
+      "agreement": 0.25,
+      "agree_low": 0.08894003962896138,
+      "agree_high": 0.53231033912066,
+      "frontier_acc": 0.3333333333333333,
+      "open_acc": 0.0,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "card_about_to_expire",
+      "n": 13,
+      "agreement": 0.3076923076923077,
+      "agree_low": 0.12680497161618087,
+      "agree_high": 0.5763111218666236,
+      "frontier_acc": 0.7692307692307693,
+      "open_acc": 0.3076923076923077,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "order_physical_card",
+      "n": 12,
+      "agreement": 0.3333333333333333,
+      "agree_low": 0.13811783989736134,
+      "agree_high": 0.609382412602386,
+      "frontier_acc": 0.16666666666666666,
+      "open_acc": 0.16666666666666666,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "why_verify_identity",
+      "n": 12,
+      "agreement": 0.3333333333333333,
+      "agree_low": 0.13811783989736134,
+      "agree_high": 0.609382412602386,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.25,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "get_physical_card",
+      "n": 11,
+      "agreement": 0.36363636363636365,
+      "agree_low": 0.15166223614131383,
+      "agree_high": 0.6462032231083628,
+      "frontier_acc": 0.0,
+      "open_acc": 0.0,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "failed_transfer",
+      "n": 12,
+      "agreement": 0.4166666666666667,
+      "agree_low": 0.19325746190524656,
+      "agree_high": 0.6804926643446272,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.4166666666666667,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "card_delivery_estimate",
+      "n": 11,
+      "agreement": 0.45454545454545453,
+      "agree_low": 0.21270957543988045,
+      "agree_high": 0.7199122443100118,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.45454545454545453,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "declined_cash_withdrawal",
+      "n": 11,
+      "agreement": 0.45454545454545453,
+      "agree_low": 0.21270957543988045,
+      "agree_high": 0.7199122443100118,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.36363636363636365,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "reverted_card_payment?",
+      "n": 11,
+      "agreement": 0.45454545454545453,
+      "agree_low": 0.21270957543988045,
+      "agree_high": 0.7199122443100118,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.18181818181818182,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "virtual_card_not_working",
+      "n": 11,
+      "agreement": 0.45454545454545453,
+      "agree_low": 0.21270957543988045,
+      "agree_high": 0.7199122443100118,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.36363636363636365,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "cash_withdrawal_not_recognised",
+      "n": 13,
+      "agreement": 0.46153846153846156,
+      "agree_low": 0.2320575430148814,
+      "agree_high": 0.7085656756816796,
+      "frontier_acc": 0.8461538461538461,
+      "open_acc": 0.3076923076923077,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "wrong_amount_of_cash_received",
+      "n": 13,
+      "agreement": 0.46153846153846156,
+      "agree_low": 0.2320575430148814,
+      "agree_high": 0.7085656756816796,
+      "frontier_acc": 1.0,
+      "open_acc": 0.46153846153846156,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "top_up_by_card_charge",
+      "n": 15,
+      "agreement": 0.4666666666666667,
+      "agree_low": 0.24809225259746442,
+      "agree_high": 0.6988336984894921,
+      "frontier_acc": 0.7333333333333333,
+      "open_acc": 0.6666666666666666,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "apple_pay_or_google_pay",
+      "n": 14,
+      "agreement": 0.5,
+      "agree_low": 0.2679886791947528,
+      "agree_high": 0.7320113208052472,
+      "frontier_acc": 0.5714285714285714,
+      "open_acc": 0.6428571428571429,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "getting_spare_card",
+      "n": 12,
+      "agreement": 0.5,
+      "agree_low": 0.2537781703934222,
+      "agree_high": 0.7462218296065778,
+      "frontier_acc": 0.8333333333333334,
+      "open_acc": 0.4166666666666667,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "pending_top_up",
+      "n": 12,
+      "agreement": 0.5,
+      "agree_low": 0.2537781703934222,
+      "agree_high": 0.7462218296065778,
+      "frontier_acc": 0.75,
+      "open_acc": 0.5,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "card_swallowed",
+      "n": 13,
+      "agreement": 0.5384615384615384,
+      "agree_low": 0.2914343243183205,
+      "agree_high": 0.7679424569851186,
+      "frontier_acc": 1.0,
+      "open_acc": 0.5384615384615384,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "wrong_exchange_rate_for_cash_withdrawal",
+      "n": 13,
+      "agreement": 0.5384615384615384,
+      "agree_low": 0.2914343243183205,
+      "agree_high": 0.7679424569851186,
+      "frontier_acc": 0.0,
+      "open_acc": 0.23076923076923078,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "card_payment_wrong_exchange_rate",
+      "n": 11,
+      "agreement": 0.5454545454545454,
+      "agree_low": 0.28008775568998817,
+      "agree_high": 0.7872904245601196,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.45454545454545453,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "pending_cash_withdrawal",
+      "n": 11,
+      "agreement": 0.5454545454545454,
+      "agree_low": 0.28008775568998817,
+      "agree_high": 0.7872904245601196,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.45454545454545453,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "pin_blocked",
+      "n": 11,
+      "agreement": 0.5454545454545454,
+      "agree_low": 0.28008775568998817,
+      "agree_high": 0.7872904245601196,
+      "frontier_acc": 0.8181818181818182,
+      "open_acc": 0.5454545454545454,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "fiat_currency_support",
+      "n": 12,
+      "agreement": 0.5833333333333334,
+      "agree_low": 0.3195073356553728,
+      "agree_high": 0.8067425380947535,
+      "frontier_acc": 0.75,
+      "open_acc": 0.5833333333333334,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "verify_top_up",
+      "n": 12,
+      "agreement": 0.5833333333333334,
+      "agree_low": 0.3195073356553728,
+      "agree_high": 0.8067425380947535,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.5833333333333334,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "balance_not_updated_after_bank_transfer",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 0.36363636363636365,
+      "open_acc": 0.45454545454545453,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "beneficiary_not_allowed",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 0.2727272727272727,
+      "open_acc": 0.18181818181818182,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "card_payment_fee_charged",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.6363636363636364,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "country_support",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.9090909090909091,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "get_disposable_virtual_card",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 1.0,
+      "open_acc": 0.6363636363636364,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "top_up_by_bank_transfer_charge",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 0.2727272727272727,
+      "open_acc": 0.18181818181818182,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "top_up_reverted",
+      "n": 11,
+      "agreement": 0.6363636363636364,
+      "agree_low": 0.35379677689163724,
+      "agree_high": 0.8483377638586862,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.36363636363636365,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "extra_charge_on_statement",
+      "n": 12,
+      "agreement": 0.6666666666666666,
+      "agree_low": 0.3906175873976139,
+      "agree_high": 0.8618821601026385,
+      "frontier_acc": 0.8333333333333334,
+      "open_acc": 0.6666666666666666,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "getting_virtual_card",
+      "n": 12,
+      "agreement": 0.6666666666666666,
+      "agree_low": 0.3906175873976139,
+      "agree_high": 0.8618821601026385,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.6666666666666666,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "contactless_not_working",
+      "n": 13,
+      "agreement": 0.6923076923076923,
+      "agree_low": 0.4236888781333764,
+      "agree_high": 0.8731950283838191,
+      "frontier_acc": 0.9230769230769231,
+      "open_acc": 0.6923076923076923,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "request_refund",
+      "n": 13,
+      "agreement": 0.6923076923076923,
+      "agree_low": 0.4236888781333764,
+      "agree_high": 0.8731950283838191,
+      "frontier_acc": 0.7692307692307693,
+      "open_acc": 0.8461538461538461,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "compromised_card",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.7272727272727273,
+      "open_acc": 0.7272727272727273,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "exchange_charge",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.6363636363636364,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "pending_transfer",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.36363636363636365,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "receiving_money",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.6363636363636364,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "transfer_fee_charged",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.7272727272727273,
+      "open_acc": 0.7272727272727273,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "transfer_into_account",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.7272727272727273,
+      "open_acc": 0.6363636363636364,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "transfer_not_received_by_recipient",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.5454545454545454,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "unable_to_verify_identity",
+      "n": 11,
+      "agreement": 0.7272727272727273,
+      "agree_low": 0.4343497069897537,
+      "agree_high": 0.9025411942607853,
+      "frontier_acc": 0.6363636363636364,
+      "open_acc": 0.9090909090909091,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "declined_transfer",
+      "n": 12,
+      "agreement": 0.75,
+      "agree_low": 0.46768966087934005,
+      "agree_high": 0.9110599603710386,
+      "frontier_acc": 0.5,
+      "open_acc": 0.5833333333333334,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "Refund_not_showing_up",
+      "n": 11,
+      "agreement": 0.8181818181818182,
+      "agree_low": 0.5230138624217553,
+      "agree_high": 0.9486333993289995,
+      "frontier_acc": 1.0,
+      "open_acc": 0.8181818181818182,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "cash_withdrawal_charge",
+      "n": 11,
+      "agreement": 0.8181818181818182,
+      "agree_low": 0.5230138624217553,
+      "agree_high": 0.9486333993289995,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.8181818181818182,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "supported_cards_and_currencies",
+      "n": 11,
+      "agreement": 0.8181818181818182,
+      "agree_low": 0.5230138624217553,
+      "agree_high": 0.9486333993289995,
+      "frontier_acc": 0.36363636363636365,
+      "open_acc": 0.2727272727272727,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "automatic_top_up",
+      "n": 12,
+      "agreement": 0.8333333333333334,
+      "agree_low": 0.5519636426153274,
+      "agree_high": 0.9530358523851776,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.9166666666666666,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "card_linking",
+      "n": 12,
+      "agreement": 0.8333333333333334,
+      "agree_low": 0.5519636426153274,
+      "agree_high": 0.9530358523851776,
+      "frontier_acc": 0.75,
+      "open_acc": 0.5833333333333334,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "declined_card_payment",
+      "n": 12,
+      "agreement": 0.8333333333333334,
+      "agree_low": 0.5519636426153274,
+      "agree_high": 0.9530358523851776,
+      "frontier_acc": 1.0,
+      "open_acc": 0.8333333333333334,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "pending_card_payment",
+      "n": 12,
+      "agreement": 0.8333333333333334,
+      "agree_low": 0.5519636426153274,
+      "agree_high": 0.9530358523851776,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.75,
+      "action": "keep_on_frontier",
+      "switch_reason": null,
+      "trusted": false
+    },
+    {
+      "intent": "visa_or_mastercard",
+      "n": 12,
+      "agreement": 0.8333333333333334,
+      "agree_low": 0.5519636426153274,
+      "agree_high": 0.9530358523851776,
+      "frontier_acc": 0.8333333333333334,
+      "open_acc": 0.8333333333333334,
+      "action": "switch",
+      "switch_reason": "accuracy",
+      "trusted": false
+    },
+    {
+      "intent": "card_not_working",
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "agree_low": 0.6226353745137962,
+      "agree_high": 0.9837682477371741,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.9090909090909091,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "change_pin",
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "agree_low": 0.6226353745137962,
+      "agree_high": 0.9837682477371741,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.8181818181818182,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "disposable_card_limits",
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "agree_low": 0.6226353745137962,
+      "agree_high": 0.9837682477371741,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.8181818181818182,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "lost_or_stolen_card",
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "agree_low": 0.6226353745137962,
+      "agree_high": 0.9837682477371741,
+      "frontier_acc": 1.0,
+      "open_acc": 0.9090909090909091,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "top_up_by_cash_or_cheque",
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "agree_low": 0.6226353745137962,
+      "agree_high": 0.9837682477371741,
+      "frontier_acc": 1.0,
+      "open_acc": 0.9090909090909091,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "activate_my_card",
+      "n": 12,
+      "agreement": 0.9166666666666666,
+      "agree_low": 0.6461140782014047,
+      "agree_high": 0.9851352905492264,
+      "frontier_acc": 0.8333333333333334,
+      "open_acc": 0.8333333333333334,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "top_up_failed",
+      "n": 12,
+      "agreement": 0.9166666666666666,
+      "agree_low": 0.6461140782014047,
+      "agree_high": 0.9851352905492264,
+      "frontier_acc": 0.8333333333333334,
+      "open_acc": 0.8333333333333334,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "transfer_timing",
+      "n": 12,
+      "agreement": 0.9166666666666666,
+      "agree_low": 0.6461140782014047,
+      "agree_high": 0.9851352905492264,
+      "frontier_acc": 0.9166666666666666,
+      "open_acc": 0.9166666666666666,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "age_limit",
+      "n": 11,
+      "agreement": 1.0,
+      "agree_low": 0.7411599827511859,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "atm_support",
+      "n": 11,
+      "agreement": 1.0,
+      "agree_low": 0.7411599827511859,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "card_acceptance",
+      "n": 11,
+      "agreement": 1.0,
+      "agree_low": 0.7411599827511859,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "edit_personal_details",
+      "n": 12,
+      "agreement": 1.0,
+      "agree_low": 0.7574992425007574,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "exchange_rate",
+      "n": 12,
+      "agreement": 1.0,
+      "agree_low": 0.7574992425007574,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "lost_or_stolen_phone",
+      "n": 11,
+      "agreement": 1.0,
+      "agree_low": 0.7411599827511859,
+      "agree_high": 1.0,
+      "frontier_acc": 0.9090909090909091,
+      "open_acc": 0.9090909090909091,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "passcode_forgotten",
+      "n": 13,
+      "agreement": 1.0,
+      "agree_low": 0.7718981569447083,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "terminate_account",
+      "n": 12,
+      "agreement": 1.0,
+      "agree_low": 0.7574992425007574,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "top_up_limits",
+      "n": 12,
+      "agreement": 1.0,
+      "agree_low": 0.7574992425007574,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "transaction_charged_twice",
+      "n": 11,
+      "agreement": 1.0,
+      "agree_low": 0.7411599827511859,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "verify_my_identity",
+      "n": 11,
+      "agreement": 1.0,
+      "agree_low": 0.7411599827511859,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    },
+    {
+      "intent": "verify_source_of_funds",
+      "n": 12,
+      "agreement": 1.0,
+      "agree_low": 0.7574992425007574,
+      "agree_high": 1.0,
+      "frontier_acc": 1.0,
+      "open_acc": 1.0,
+      "action": "switch",
+      "switch_reason": "agreement",
+      "trusted": false
+    }
+  ],
+  "samples": [
+    {
+      "text": "Why doesn't a return show up im my account from a purchase I made?",
+      "gold": "Refund_not_showing_up",
+      "frontier": "Refund_not_showing_up",
+      "open": "request_refund",
+      "agree": false
+    },
+    {
+      "text": "Use credit card to transfer money",
+      "gold": "topping_up_by_card",
+      "frontier": "topping_up_by_card",
+      "open": "card_payment_not_recognised",
+      "agree": false
+    },
+    {
+      "text": "I think I see a withdraw I did not make.",
+      "gold": "cash_withdrawal_not_recognised",
+      "frontier": "cash_withdrawal_not_recognised",
+      "open": "declined_cash_withdrawal",
+      "agree": false
+    },
+    {
+      "text": "Are cheques accepted to my account? Mine didn't seem to work.",
+      "gold": "balance_not_updated_after_cheque_or_cash_deposit",
+      "frontier": "top_up_by_cash_or_cheque",
+      "open": "balance_not_updated_after_cheque_or_cash_deposit",
+      "agree": false
+    },
+    {
+      "text": "I withdrew money but the full amount wasn't dispensed.",
+      "gold": "wrong_amount_of_cash_received",
+      "frontier": "wrong_amount_of_cash_received",
+      "open": "cash_withdrawal_not_recognised",
+      "agree": false
+    },
+    {
+      "text": "How do I receive my physical card",
+      "gold": "order_physical_card",
+      "frontier": "card_delivery_estimate",
+      "open": "get_physical_card",
+      "agree": false
+    },
+    {
+      "text": "Where is the money that I asked for? I asked for more than I got!",
+      "gold": "wrong_amount_of_cash_received",
+      "frontier": "wrong_amount_of_cash_received",
+      "open": "request_refund",
+      "agree": false
+    },
+    {
+      "text": "I can't transfer money from my account.",
+      "gold": "declined_transfer",
+      "frontier": "declined_transfer",
+      "open": "transfer_not_received_by_recipient",
+      "agree": false
+    },
+    {
+      "text": "I didn't receive all the cash I asked for",
+      "gold": "wrong_amount_of_cash_received",
+      "frontier": "wrong_amount_of_cash_received",
+      "open": "transfer_not_received_by_recipient",
+      "agree": false
+    },
+    {
+      "text": "I received my new card, but I don't see it in the app anywhere.  What do I do?",
+      "gold": "card_linking",
+      "frontier": "card_linking",
+      "open": "card_arrival",
+      "agree": false
+    },
+    {
+      "text": "Why did I get blocked?",
+      "gold": "pin_blocked",
+      "frontier": "Refund_not_showing_up",
+      "open": "pin_blocked",
+      "agree": false
+    },
+    {
+      "text": "My top-up was cancelled; will I receive a refund?",
+      "gold": "top_up_reverted",
+      "frontier": "top_up_reverted",
+      "open": "request_refund",
+      "agree": false
+    },
+    {
+      "text": "My disposable virtual card is not working when I try to use it at a point of sale transaction. What do I do now?",
+      "gold": "virtual_card_not_working",
+      "frontier": "virtual_card_not_working",
+      "open": "card_not_working",
+      "agree": false
+    },
+    {
+      "text": "How do I use contactless pay?",
+      "gold": "contactless_not_working",
+      "frontier": "contactless_not_working",
+      "open": "card_acceptance",
+      "agree": false
+    },
+    {
+      "text": "I want to make a currency exchange to EU.",
+      "gold": "fiat_currency_support",
+      "frontier": "exchange_via_app",
+      "open": "exchange_rate",
+      "agree": false
+    },
+    {
+      "text": "Why am I required to do an identity check?",
+      "gold": "why_verify_identity",
+      "frontier": "why_verify_identity",
+      "open": "verify_my_identity",
+      "agree": false
+    },
+    {
+      "text": "I bought something, but the exchange rate looks wrong.",
+      "gold": "card_payment_wrong_exchange_rate",
+      "frontier": "card_payment_wrong_exchange_rate",
+      "open": "exchange_rate",
+      "agree": false
+    },
+    {
+      "text": "My card has not arrived yet.",
+      "gold": "card_arrival",
+      "frontier": "card_delivery_estimate",
+      "open": "card_arrival",
+      "agree": false
+    },
+    {
+      "text": "Help me find my card pin!",
+      "gold": "get_physical_card",
+      "frontier": "passcode_forgotten",
+      "open": "change_pin",
+      "agree": false
+    },
+    {
+      "text": "I cannot locate the verification code for my top-up card. Please help me.",
+      "gold": "verify_top_up",
+      "frontier": "verify_top_up",
+      "open": "pending_top_up",
+      "agree": false
+    },
+    {
+      "text": "Should i reinstall the payment app?",
+      "gold": "contactless_not_working",
+      "frontier": "virtual_card_not_working",
+      "open": "apple_pay_or_google_pay",
+      "agree": false
+    },
+    {
+      "text": "Please help me get a new card, I reside in the United States.",
+      "gold": "country_support",
+      "frontier": "get_physical_card",
+      "open": "country_support",
+      "agree": false
+    },
+    {
+      "text": "What if I need my salary in a different currency?",
+      "gold": "receiving_money",
+      "frontier": "fiat_currency_support",
+      "open": "exchange_rate",
+      "agree": false
+    },
+    {
+      "text": "I will need to get a new card soon, how do I order?",
+      "gold": "card_about_to_expire",
+      "frontier": "order_physical_card",
+      "open": "get_physical_card",
+      "agree": false
+    },
+    {
+      "text": "The new card that was just sent to me was declined multiple times yesterday when I tried to use it at a restaurant to pay for my dinner.  I am really disappointed  and embarrassed that my card was denied when I tried to use it to pay for my friend's birthday dinner.",
+      "gold": "declined_card_payment",
+      "frontier": "declined_card_payment",
+      "open": "card_not_working",
+      "agree": false
+    },
+    {
+      "text": "Change currency",
+      "gold": "exchange_via_app",
+      "frontier": "exchange_via_app",
+      "open": "exchange_rate",
+      "agree": false
+    },
+    {
+      "text": "How do I exchange currency?",
+      "gold": "exchange_via_app",
+      "frontier": "exchange_via_app",
+      "open": "exchange_rate",
+      "agree": false
+    },
+    {
+      "text": "My transfer keeps failing and I just want to transfer the money can you please make it work?",
+      "gold": "failed_transfer",
+      "frontier": "failed_transfer",
+      "open": "pending_transfer",
+      "agree": false
+    },
+    {
+      "text": "How can I get a physical card",
+      "gold": "order_physical_card",
+      "frontier": "order_physical_card",
+      "open": "get_physical_card",
+      "agree": false
+    },
+    {
+      "text": "The balance on my account wasn't updated after I made a depost.",
+      "gold": "balance_not_updated_after_cheque_or_cash_deposit",
+      "frontier": "balance_not_updated_after_bank_transfer",
+      "open": "balance_not_updated_after_cheque_or_cash_deposit",
+      "agree": false
+    },
+    {
+      "text": "Why is there an extra charge for money that was withdrawn?",
+      "gold": "cash_withdrawal_charge",
+      "frontier": "cash_withdrawal_charge",
+      "open": "cash_withdrawal_charge",
+      "agree": true
+    },
+    {
+      "text": "Why did I need to verfiy my identity?",
+      "gold": "why_verify_identity",
+      "frontier": "why_verify_identity",
+      "open": "why_verify_identity",
+      "agree": true
+    },
+    {
+      "text": "What is the importance of verifying the top-up?",
+      "gold": "verify_top_up",
+      "frontier": "verify_top_up",
+      "open": "verify_top_up",
+      "agree": true
+    },
+    {
+      "text": "I made a payment that got charged twice instead of once.",
+      "gold": "transaction_charged_twice",
+      "frontier": "transaction_charged_twice",
+      "open": "transaction_charged_twice",
+      "agree": true
+    },
+    {
+      "text": "I want to transfer money to a beneficiery. Why can't I?",
+      "gold": "beneficiary_not_allowed",
+      "frontier": "beneficiary_not_allowed",
+      "open": "beneficiary_not_allowed",
+      "agree": true
+    },
+    {
+      "text": "Where should my card work?",
+      "gold": "card_acceptance",
+      "frontier": "card_acceptance",
+      "open": "card_acceptance",
+      "agree": true
+    },
+    {
+      "text": "Can you tell me the total cost of a transfer?",
+      "gold": "top_up_by_bank_transfer_charge",
+      "frontier": "transfer_fee_charged",
+      "open": "transfer_fee_charged",
+      "agree": true
+    },
+    {
+      "text": "Is there a charge for a foreign currency exchange?",
+      "gold": "exchange_charge",
+      "frontier": "exchange_charge",
+      "open": "exchange_charge",
+      "agree": true
+    },
+    {
+      "text": "Why do I have to verify my identity?",
+      "gold": "why_verify_identity",
+      "frontier": "why_verify_identity",
+      "open": "why_verify_identity",
+      "agree": true
+    },
+    {
+      "text": "It didnt work when I tried to pay contactless at the bus today. Why?",
+      "gold": "contactless_not_working",
+      "frontier": "contactless_not_working",
+      "open": "contactless_not_working",
+      "agree": true
+    },
+    {
+      "text": "Is there any way to Auto top-up?",
+      "gold": "automatic_top_up",
+      "frontier": "automatic_top_up",
+      "open": "automatic_top_up",
+      "agree": true
+    },
+    {
+      "text": "Why did I have to pay more when I do it with my card?",
+      "gold": "card_payment_fee_charged",
+      "frontier": "card_payment_fee_charged",
+      "open": "card_payment_fee_charged",
+      "agree": true
+    },
+    {
+      "text": "Do you have a limit to top ups?",
+      "gold": "top_up_limits",
+      "frontier": "top_up_limits",
+      "open": "top_up_limits",
+      "agree": true
+    },
+    {
+      "text": "Why would I have a pending payment?",
+      "gold": "pending_card_payment",
+      "frontier": "pending_card_payment",
+      "open": "pending_card_payment",
+      "agree": true
+    },
+    {
+      "text": "The app doesn't know it's me.",
+      "gold": "unable_to_verify_identity",
+      "frontier": "unable_to_verify_identity",
+      "open": "unable_to_verify_identity",
+      "agree": true
+    },
+    {
+      "text": "What is the current exchange rate for me?",
+      "gold": "exchange_rate",
+      "frontier": "exchange_rate",
+      "open": "exchange_rate",
+      "agree": true
+    },
+    {
+      "text": "Could I open an account for my children?",
+      "gold": "age_limit",
+      "frontier": "age_limit",
+      "open": "age_limit",
+      "agree": true
+    },
+    {
+      "text": "I am having trouble verifying my identity.",
+      "gold": "unable_to_verify_identity",
+      "frontier": "unable_to_verify_identity",
+      "open": "unable_to_verify_identity",
+      "agree": true
+    },
+    {
+      "text": "I tried to top up. Why was it denied?",
+      "gold": "top_up_failed",
+      "frontier": "top_up_failed",
+      "open": "top_up_failed",
+      "agree": true
+    },
+    {
+      "text": "How do I know why my card isn't working?",
+      "gold": "card_not_working",
+      "frontier": "card_not_working",
+      "open": "card_not_working",
+      "agree": true
+    },
+    {
+      "text": "Did you start charging for cash withdrawals? I thought it was free so far but noticed suddendly there is a fee. How much do I need to pay?",
+      "gold": "cash_withdrawal_charge",
+      "frontier": "cash_withdrawal_charge",
+      "open": "cash_withdrawal_charge",
+      "agree": true
+    },
+    {
+      "text": "Is there an amount limit to my top-up?",
+      "gold": "top_up_limits",
+      "frontier": "top_up_limits",
+      "open": "top_up_limits",
+      "agree": true
+    },
+    {
+      "text": "what are exchange rates based on",
+      "gold": "exchange_rate",
+      "frontier": "exchange_rate",
+      "open": "exchange_rate",
+      "agree": true
+    },
+    {
+      "text": "Can I reset my password?  I don't know what it is.",
+      "gold": "passcode_forgotten",
+      "frontier": "passcode_forgotten",
+      "open": "passcode_forgotten",
+      "agree": true
+    },
+    {
+      "text": "I didn't get the money I transferred",
+      "gold": "balance_not_updated_after_bank_transfer",
+      "frontier": "transfer_not_received_by_recipient",
+      "open": "transfer_not_received_by_recipient",
+      "agree": true
+    },
+    {
+      "text": "Please help me get a virtual card.",
+      "gold": "getting_virtual_card",
+      "frontier": "getting_virtual_card",
+      "open": "getting_virtual_card",
+      "agree": true
+    },
+    {
+      "text": "I was attempting to purchase a golf club off eBay yesterday, but my credit card was declined. I tried multiple times, and again this morning. Can you check into my card please?",
+      "gold": "declined_transfer",
+      "frontier": "declined_card_payment",
+      "open": "declined_card_payment",
+      "agree": true
+    },
+    {
+      "text": "How many times can I use a disposable card?",
+      "gold": "disposable_card_limits",
+      "frontier": "disposable_card_limits",
+      "open": "disposable_card_limits",
+      "agree": true
+    },
+    {
+      "text": "I want a refund for my purchase",
+      "gold": "request_refund",
+      "frontier": "request_refund",
+      "open": "request_refund",
+      "agree": true
+    },
+    {
+      "text": "How do I make contactless work",
+      "gold": "contactless_not_working",
+      "frontier": "contactless_not_working",
+      "open": "contactless_not_working",
+      "agree": true
+    }
+  ]
+}

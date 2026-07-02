@@ -1,0 +1,216 @@
+{"text": "My new card still hasn't arrived, how long does delivery take?", "label": "card_arrival"}
+{"text": "I ordered a card a week ago and it's not here yet.", "label": "card_arrival"}
+{"text": "When will my physical card get to me?", "label": "card_arrival"}
+{"text": "Still waiting on the card I requested, any update on shipping?", "label": "card_arrival"}
+{"text": "How many days until my card is delivered?", "label": "card_arrival"}
+{"text": "It's been ten days and no card has shown up.", "label": "card_arrival"}
+{"text": "Can you tell me the status of my card delivery?", "label": "card_arrival"}
+{"text": "I'm expecting a new card, when should it arrive?", "label": "card_arrival"}
+{"text": "The card I ordered hasn't reached my address.", "label": "card_arrival"}
+{"text": "Where is my card? It was supposed to come by now.", "label": "card_arrival"}
+{"text": "How long is shipping for a replacement card?", "label": "card_arrival"}
+{"text": "My card order says sent but nothing has arrived.", "label": "card_arrival"}
+{"text": "Do you know when my new debit card will be here?", "label": "card_arrival"}
+{"text": "I never received the card I signed up for.", "label": "card_arrival"}
+{"text": "Tracking for my card delivery, please.", "label": "card_arrival"}
+{"text": "Any idea why my card is taking so long to arrive?", "label": "card_arrival"}
+{"text": "The card was dispatched but I haven't got it yet.", "label": "card_arrival"}
+{"text": "When can I expect the card to land in my mailbox?", "label": "card_arrival"}
+{"text": "My card won't work at the store, it keeps getting rejected.", "label": "card_not_working"}
+{"text": "The chip on my card isn't being read by the terminal.", "label": "card_not_working"}
+{"text": "I can't use my card, it says error every time I tap.", "label": "card_not_working"}
+{"text": "Card stopped functioning suddenly, what's wrong?", "label": "card_not_working"}
+{"text": "My card is not working when I try to pay online.", "label": "card_not_working"}
+{"text": "The card won't go through at any shop today.", "label": "card_not_working"}
+{"text": "My card keeps failing at the checkout terminal.", "label": "card_not_working"}
+{"text": "Tried three times and my card just doesn't work.", "label": "card_not_working"}
+{"text": "Why has my card stopped working all of a sudden?", "label": "card_not_working"}
+{"text": "The reader won't accept my card at all.", "label": "card_not_working"}
+{"text": "My contactless isn't working on the card.", "label": "card_not_working"}
+{"text": "Card not functioning, can't make any purchases.", "label": "card_not_working"}
+{"text": "It says card error whenever I insert it.", "label": "card_not_working"}
+{"text": "My card is dead, nothing goes through with it.", "label": "card_not_working"}
+{"text": "The card fails every time I swipe it.", "label": "card_not_working"}
+{"text": "Can't get my card to work at the pump either.", "label": "card_not_working"}
+{"text": "My card won't register at the machine.", "label": "card_not_working"}
+{"text": "Nothing happens when I use my card, it's not working.", "label": "card_not_working"}
+{"text": "I transferred money but my balance still shows the old amount.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Sent a bank transfer hours ago and the balance hasn't changed.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Why is my balance not reflecting the transfer I made?", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "My account balance didn't go up after the incoming transfer.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "The transfer went through but the balance is wrong.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Money was sent to me but my balance is unchanged.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "My balance hasn't updated since the transfer landed.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Received a transfer but the balance still looks old.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "The incoming payment isn't showing in my balance.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Balance is stuck even though the transfer completed.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "I got a bank transfer but my total didn't move.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Why hasn't my balance risen after the deposit transfer?", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "The transfer cleared but my available balance is stale.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "My balance should be higher after that transfer.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Transfer received on their end, my balance says otherwise.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "The funds transferred in aren't reflected in my balance.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "My statement shows the transfer but the balance doesn't.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Balance not updated after the bank transfer came in.", "label": "balance_not_updated_after_bank_transfer"}
+{"text": "Why was I charged a fee for withdrawing cash?", "label": "cash_withdrawal_charge"}
+{"text": "There's an extra charge on my ATM withdrawal.", "label": "cash_withdrawal_charge"}
+{"text": "I got charged for taking money out at the machine, is that normal?", "label": "cash_withdrawal_charge"}
+{"text": "Unexpected fee when I withdrew cash abroad.", "label": "cash_withdrawal_charge"}
+{"text": "Do you charge for cash withdrawals? I saw a deduction.", "label": "cash_withdrawal_charge"}
+{"text": "A fee appeared after I used the ATM.", "label": "cash_withdrawal_charge"}
+{"text": "I was billed for a cash withdrawal, why?", "label": "cash_withdrawal_charge"}
+{"text": "There's a charge next to my cash machine withdrawal.", "label": "cash_withdrawal_charge"}
+{"text": "Got hit with a fee for pulling out cash.", "label": "cash_withdrawal_charge"}
+{"text": "Why is there a cost on my ATM cash out?", "label": "cash_withdrawal_charge"}
+{"text": "Charged extra for withdrawing money overseas.", "label": "cash_withdrawal_charge"}
+{"text": "My withdrawal came with a surprise fee.", "label": "cash_withdrawal_charge"}
+{"text": "Explain the fee on my recent cash withdrawal.", "label": "cash_withdrawal_charge"}
+{"text": "I paid a charge just to get cash from the ATM.", "label": "cash_withdrawal_charge"}
+{"text": "Is a fee normal for taking out cash abroad?", "label": "cash_withdrawal_charge"}
+{"text": "There was a deduction for my cash withdrawal.", "label": "cash_withdrawal_charge"}
+{"text": "Why am I paying to withdraw my own money?", "label": "cash_withdrawal_charge"}
+{"text": "A withdrawal fee showed up on my account.", "label": "cash_withdrawal_charge"}
+{"text": "My card payment was declined at checkout.", "label": "declined_card_payment"}
+{"text": "The shop said my payment didn't go through.", "label": "declined_card_payment"}
+{"text": "Why does my card keep getting declined when I have funds?", "label": "declined_card_payment"}
+{"text": "Payment refused even though I have money in the account.", "label": "declined_card_payment"}
+{"text": "My transaction was rejected, what happened?", "label": "declined_card_payment"}
+{"text": "Card got declined while I was paying for groceries.", "label": "declined_card_payment"}
+{"text": "The payment failed and I don't know why.", "label": "declined_card_payment"}
+{"text": "My purchase was blocked at the till.", "label": "declined_card_payment"}
+{"text": "Declined again despite having enough balance.", "label": "declined_card_payment"}
+{"text": "The terminal declined my card payment.", "label": "declined_card_payment"}
+{"text": "My online payment was turned down.", "label": "declined_card_payment"}
+{"text": "Why was my card transaction not approved?", "label": "declined_card_payment"}
+{"text": "Payment keeps getting declined at this store.", "label": "declined_card_payment"}
+{"text": "I have funds but the card payment won't approve.", "label": "declined_card_payment"}
+{"text": "My card was rejected during checkout.", "label": "declined_card_payment"}
+{"text": "The system declined my payment twice.", "label": "declined_card_payment"}
+{"text": "Couldn't pay, the card was declined.", "label": "declined_card_payment"}
+{"text": "My card payment didn't complete, it was refused.", "label": "declined_card_payment"}
+{"text": "What exchange rate do you use for foreign currency?", "label": "exchange_rate"}
+{"text": "How is the currency conversion rate calculated?", "label": "exchange_rate"}
+{"text": "The exchange rate I got seems different from Google's.", "label": "exchange_rate"}
+{"text": "Which rate applies when I spend in euros?", "label": "exchange_rate"}
+{"text": "Do you add a markup to the exchange rate?", "label": "exchange_rate"}
+{"text": "What's your rate for converting dollars to pounds?", "label": "exchange_rate"}
+{"text": "How do you decide the FX rate on my purchases?", "label": "exchange_rate"}
+{"text": "The conversion rate looks off compared to the market.", "label": "exchange_rate"}
+{"text": "Is there a fee baked into your exchange rate?", "label": "exchange_rate"}
+{"text": "What rate will I get spending abroad?", "label": "exchange_rate"}
+{"text": "How often is your exchange rate updated?", "label": "exchange_rate"}
+{"text": "Why is my exchange rate different from the mid-market rate?", "label": "exchange_rate"}
+{"text": "Tell me the exchange rate you apply for yen.", "label": "exchange_rate"}
+{"text": "Do weekend rates differ for currency exchange?", "label": "exchange_rate"}
+{"text": "What's the rate for a foreign transaction today?", "label": "exchange_rate"}
+{"text": "Explain how your currency conversion works.", "label": "exchange_rate"}
+{"text": "Which exchange rate was used on my last trip?", "label": "exchange_rate"}
+{"text": "Is your FX rate live or fixed daily?", "label": "exchange_rate"}
+{"text": "I lost my card, please block it immediately.", "label": "lost_or_stolen_card"}
+{"text": "My card was stolen last night, what do I do?", "label": "lost_or_stolen_card"}
+{"text": "Someone took my wallet with my card, help.", "label": "lost_or_stolen_card"}
+{"text": "I can't find my card anywhere, I think it's gone.", "label": "lost_or_stolen_card"}
+{"text": "Need to report a stolen card and get a new one.", "label": "lost_or_stolen_card"}
+{"text": "My card has been stolen, freeze it now.", "label": "lost_or_stolen_card"}
+{"text": "I misplaced my card, can you cancel it?", "label": "lost_or_stolen_card"}
+{"text": "Report a lost card please, it's missing.", "label": "lost_or_stolen_card"}
+{"text": "My purse was stolen along with the card.", "label": "lost_or_stolen_card"}
+{"text": "Block my card, I believe it was taken.", "label": "lost_or_stolen_card"}
+{"text": "I dropped my card somewhere and can't recover it.", "label": "lost_or_stolen_card"}
+{"text": "Someone stole my card, please deactivate it.", "label": "lost_or_stolen_card"}
+{"text": "Lost my card on the train, need it blocked.", "label": "lost_or_stolen_card"}
+{"text": "My card is gone and I want it frozen.", "label": "lost_or_stolen_card"}
+{"text": "Help, my card was pickpocketed.", "label": "lost_or_stolen_card"}
+{"text": "I need to cancel a card that was stolen.", "label": "lost_or_stolen_card"}
+{"text": "My wallet's gone with my bank card inside.", "label": "lost_or_stolen_card"}
+{"text": "Please stop my card, it's been lost.", "label": "lost_or_stolen_card"}
+{"text": "My transfer is still pending, when will it complete?", "label": "pending_transfer"}
+{"text": "The money I sent is stuck as pending.", "label": "pending_transfer"}
+{"text": "Why has my transfer been pending for so long?", "label": "pending_transfer"}
+{"text": "Outgoing transfer shows pending, is that a problem?", "label": "pending_transfer"}
+{"text": "How long do pending transfers usually take to clear?", "label": "pending_transfer"}
+{"text": "My payment has been pending for two days.", "label": "pending_transfer"}
+{"text": "The transfer won't move past pending status.", "label": "pending_transfer"}
+{"text": "When does a pending transfer actually go through?", "label": "pending_transfer"}
+{"text": "My sent money is still marked pending.", "label": "pending_transfer"}
+{"text": "Transfer stuck in pending, please help.", "label": "pending_transfer"}
+{"text": "Why is my outgoing payment still pending?", "label": "pending_transfer"}
+{"text": "It's been hours and the transfer is pending.", "label": "pending_transfer"}
+{"text": "My transfer hasn't left pending yet.", "label": "pending_transfer"}
+{"text": "Is a pending transfer normal after this long?", "label": "pending_transfer"}
+{"text": "The status of my transfer is still pending.", "label": "pending_transfer"}
+{"text": "Pending transfer \u2014 when will it finalize?", "label": "pending_transfer"}
+{"text": "My money transfer is hanging in pending.", "label": "pending_transfer"}
+{"text": "How do I clear a stuck pending transfer?", "label": "pending_transfer"}
+{"text": "My top up failed, the money didn't get added.", "label": "top_up_failed"}
+{"text": "I tried to add funds but it didn't work.", "label": "top_up_failed"}
+{"text": "Top-up unsuccessful, card was charged though.", "label": "top_up_failed"}
+{"text": "Why did my attempt to top up my account fail?", "label": "top_up_failed"}
+{"text": "The top up keeps failing every time I try.", "label": "top_up_failed"}
+{"text": "My account top-up didn't go through.", "label": "top_up_failed"}
+{"text": "Adding money failed but I was still charged.", "label": "top_up_failed"}
+{"text": "The top up won't complete, it errors out.", "label": "top_up_failed"}
+{"text": "I can't top up my balance, it fails.", "label": "top_up_failed"}
+{"text": "My top-up attempt was rejected.", "label": "top_up_failed"}
+{"text": "Failed to add funds to my account.", "label": "top_up_failed"}
+{"text": "Every top up I try comes back as failed.", "label": "top_up_failed"}
+{"text": "The top up didn't credit my account.", "label": "top_up_failed"}
+{"text": "My reload of funds keeps failing.", "label": "top_up_failed"}
+{"text": "Top up error \u2014 the money never arrived.", "label": "top_up_failed"}
+{"text": "Can't seem to top up, it always fails.", "label": "top_up_failed"}
+{"text": "My deposit top-up did not succeed.", "label": "top_up_failed"}
+{"text": "Tried topping up twice, both failed.", "label": "top_up_failed"}
+{"text": "I sent money but the recipient says they didn't get it.", "label": "transfer_not_received_by_recipient"}
+{"text": "The person I paid hasn't received the transfer.", "label": "transfer_not_received_by_recipient"}
+{"text": "My friend says the money I sent never arrived.", "label": "transfer_not_received_by_recipient"}
+{"text": "Transfer left my account but recipient sees nothing.", "label": "transfer_not_received_by_recipient"}
+{"text": "Why hasn't the beneficiary received my payment yet?", "label": "transfer_not_received_by_recipient"}
+{"text": "I paid someone but they got nothing.", "label": "transfer_not_received_by_recipient"}
+{"text": "The recipient claims my transfer never came through.", "label": "transfer_not_received_by_recipient"}
+{"text": "Money left me but never reached the other person.", "label": "transfer_not_received_by_recipient"}
+{"text": "My payee hasn't received the funds I sent.", "label": "transfer_not_received_by_recipient"}
+{"text": "Sent a transfer but the other side got nothing.", "label": "transfer_not_received_by_recipient"}
+{"text": "The person hasn't received my money transfer.", "label": "transfer_not_received_by_recipient"}
+{"text": "My transfer isn't showing up for the recipient.", "label": "transfer_not_received_by_recipient"}
+{"text": "I sent cash but they say it's not there.", "label": "transfer_not_received_by_recipient"}
+{"text": "Recipient didn't get the transfer I made.", "label": "transfer_not_received_by_recipient"}
+{"text": "Where did my transfer go? They never got it.", "label": "transfer_not_received_by_recipient"}
+{"text": "The beneficiary is still waiting on my transfer.", "label": "transfer_not_received_by_recipient"}
+{"text": "My payment to them seems to have vanished.", "label": "transfer_not_received_by_recipient"}
+{"text": "They confirm the transfer never arrived.", "label": "transfer_not_received_by_recipient"}
+{"text": "How do I verify my identity for the account?", "label": "verify_identity"}
+{"text": "The app is asking me to confirm my identity.", "label": "verify_identity"}
+{"text": "What documents do I need to verify who I am?", "label": "verify_identity"}
+{"text": "I need to complete identity verification, how?", "label": "verify_identity"}
+{"text": "Why do I have to verify my identity again?", "label": "verify_identity"}
+{"text": "Help me get through the identity check.", "label": "verify_identity"}
+{"text": "What ID is accepted for verification?", "label": "verify_identity"}
+{"text": "I'm stuck on the verify identity step.", "label": "verify_identity"}
+{"text": "How can I prove my identity to you?", "label": "verify_identity"}
+{"text": "The identity verification won't accept my photo.", "label": "verify_identity"}
+{"text": "Steps to verify my identity, please.", "label": "verify_identity"}
+{"text": "I want to finish verifying who I am.", "label": "verify_identity"}
+{"text": "Which papers confirm my identity for the app?", "label": "verify_identity"}
+{"text": "My identity verification keeps failing.", "label": "verify_identity"}
+{"text": "Do I need a passport to verify my identity?", "label": "verify_identity"}
+{"text": "Guide me through confirming my identity.", "label": "verify_identity"}
+{"text": "How long does identity verification take?", "label": "verify_identity"}
+{"text": "I can't complete the identity confirmation.", "label": "verify_identity"}
+{"text": "The ATM gave me less cash than I asked for.", "label": "wrong_amount_of_cash_received"}
+{"text": "I withdrew money but got the wrong amount.", "label": "wrong_amount_of_cash_received"}
+{"text": "Machine dispensed fewer notes than requested.", "label": "wrong_amount_of_cash_received"}
+{"text": "I asked for 200 but only received 150 at the ATM.", "label": "wrong_amount_of_cash_received"}
+{"text": "The cash amount from the ATM doesn't match my request.", "label": "wrong_amount_of_cash_received"}
+{"text": "ATM shorted me on the cash withdrawal.", "label": "wrong_amount_of_cash_received"}
+{"text": "I got the wrong sum of money from the machine.", "label": "wrong_amount_of_cash_received"}
+{"text": "The cash dispensed was less than I selected.", "label": "wrong_amount_of_cash_received"}
+{"text": "My withdrawal came up short in notes.", "label": "wrong_amount_of_cash_received"}
+{"text": "The ATM gave incorrect cash, too little.", "label": "wrong_amount_of_cash_received"}
+{"text": "I received the wrong amount of money from the ATM.", "label": "wrong_amount_of_cash_received"}
+{"text": "Fewer bills came out than I withdrew.", "label": "wrong_amount_of_cash_received"}
+{"text": "The machine gave me the wrong cash total.", "label": "wrong_amount_of_cash_received"}
+{"text": "I'm missing cash from my ATM withdrawal.", "label": "wrong_amount_of_cash_received"}
+{"text": "The amount of cash I got is wrong.", "label": "wrong_amount_of_cash_received"}
+{"text": "ATM dispensed the incorrect amount to me.", "label": "wrong_amount_of_cash_received"}
+{"text": "I took out money but the notes were short.", "label": "wrong_amount_of_cash_received"}
+{"text": "The cash I received doesn't add up to my request.", "label": "wrong_amount_of_cash_received"}

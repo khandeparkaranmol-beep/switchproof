@@ -1,63 +1,62 @@
-LINKEDIN POST — copy/paste ready (plain text)
-===============================================
+A language model that agreed with Claude only 66% of the time turned out to be the better choice.
 
-My AI fact-checker scored 100% on my own test set.
+Here's the counterintuitive reason.
 
-That's exactly when I stopped trusting it.
+Every AI team is quietly overpaying for tokens. Open models are now 10–100x cheaper and often good enough — but nobody can prove a switch is safe on their own traffic, so they keep paying.
 
-AI assistants sound just as confident when they're wrong as when they're right — and the dangerous part is you can't tell which sentences to trust. Asking the model to check itself doesn't help; it has the same blind spots that produced the error.
+So I built a tool that proves it. Feed it your real queries; it runs your current frontier model and a cheap open model side by side and decides, per slice of traffic, where you can switch without losing quality — with a dollar figure attached.
 
-So I built Second Opinion. You paste any AI answer, it breaks it into individual claims, checks each one against live web sources, and flags what's false or unverifiable — with the source. If it can't verify something, it says so. It never bluffs.
+I tested it on 900 real banking-support queries (77-way intent classification): Claude Sonnet vs a Llama-3.1-8B that costs ~100x less.
 
-On my first benchmark it caught 100% of the errors. Suspicious of my own number, I built a "hard mode" designed to break it: surprising-but-true facts (octopuses really do have three hearts) and plausible fabrications with no tidy myth-buster page (a "Boeing 797" that doesn't exist).
+The naive signal looked bad — the two models agreed only 66% of the time. Case closed, don't switch?
 
-It broke — in the most useful way. It stayed strong at catching real lies, but it started crying wolf on true-but-surprising claims. So I taught it to answer "unverified" when the evidence is thin, instead of guessing "false."
+Not quite. Agreement with your current model isn't the same as being right. On several intents the cheap model actually matched the human label better than Claude did — Claude was the inconsistent one, splitting near-duplicate categories.
 
-Where it landed, on 150 adversarial AI answers:
-→ 180/180 planted errors caught (95% CI 98–100%)
-→ 0 false alarms across 100 true claims
-→ confidence calibrated so "90% sure" means right ~90% of the time
+So instead of trusting raw agreement, I routed per slice: switch only where the open model is at least as accurate.
 
-The part I'm proudest of isn't the accuracy. It's that the tool refuses to bluff — and that I built an eval whose whole job is to catch it bluffing.
+→ 46% of traffic safely moved to the model that's ~100x cheaper and 6x faster
+→ Accuracy went UP — 79% after routing vs 76% staying all-Claude
+→ ~$15K/year saved at 1M calls a month
+→ And the real win: it flagged the other 54% where switching WOULD have hurt
 
-What's the most confidently-wrong thing an AI has ever told you — and did you catch it in time?
+The product was never really about the savings. It's the guard — the thing that stops a blind cost-cut from quietly breaking half your traffic.
 
+Built solo, measured on live model calls. Every number here is real, with confidence intervals, not a vibe.
+
+I put the full interactive breakdown online — the verdict, every intent, the confidence intervals, and a savings calculator you can drag:
+→ [PASTE YOUR LIVE LINK HERE]
+
+If you run LLMs in production: how are you deciding today whether a cheaper model is safe to switch to — gut feel, or something you can actually measure?
 
 ---
 
-POSTING NOTES
-=============
+## POSTING NOTES
 
-DEMO ASSET (do this first — it's the highest-leverage part):
-- Record a 15–30s screen capture of ONE live catch. Suggested: an answer containing the
-  fake "Boeing 797" or "vaccines cause autism", run through `python -m second_opinion "..."`,
-  so viewers watch it flag the false claim WITH a real source link.
-- Also grab a still of the eval scorecard (180/180, 0 false-flags, the CI).
-- Upload the video NATIVELY to LinkedIn (not a YouTube link) — 3–5x more reach.
+**Platform:** LinkedIn only. Skip HN until the repo is public and open-source — then a Show HN with the code lands well.
 
-LINK:
-- Strongest with a GitHub link. If the repo isn't public yet, either push it public first,
-  or post as build-in-public and add "Repo + write-up coming — DM me if you want early access"
-  in the first comment. A post with a real artifact link outperforms one without.
+**Timing:** Tuesday–Thursday, 8–10am ET. Don't edit after posting (LinkedIn deprioritizes edited posts) — get it right first.
 
-TIMING:
-- Tuesday–Thursday, 8–10am ET.
+**Video (do this):** Attach the 20–40s screen recording of the app — verdict → drag the savings slider → filter to "keep on frontier" (the guard) → the card_arrival sample. Native upload, NOT a YouTube/Loom link (native video gets 3–5x reach and autoplays).
 
-HASHTAGS:
-- None in the post body. Put 2–3 in the FIRST COMMENT: #AI #MachineLearning #ProductManagement
+**Hashtags:** none in the post body. Put 2–3 in the FIRST COMMENT: #AI #MachineLearning #ProductManagement (or #LLMOps #AIProduct).
 
-FIRST COMMENT (post within 1 min of publishing):
-- Re-link the demo video/repo + one line: "Happy to go deeper on how the calibration and the
-  'catch the grader' eval work — ask away."
+**First comment (post it yourself within 1 min):**
+"Interactive results here → [YOUR LIVE LINK]. Technical detail for the curious: 'agreement' is measured against the frontier model as a live reference (Case 1 — you already run a frontier model), reported with Wilson 95% confidence intervals, then overridden per-slice by gold accuracy where labels exist. Happy to go deeper on the eval design — ask away. #AI #LLMOps #ProductManagement"
 
-REPLY CADENCE:
-- Reply to every comment in the first 60 minutes (first-hour replies ≈ 2.4x reach), then
-  every few hours for 24h. Ask follow-up questions to keep threads alive (comments weigh 2x likes).
+**Deploying the results site (do this before posting):** the app is a static build with no secrets in it — safe to host.
+  1. On your laptop:  cd web && npm install && npm run build   (produces web/dist)
+  2. Easiest + safest: go to https://app.netlify.com/drop and drag the web/dist folder in → you get a URL like https://your-name.netlify.app (rename it in site settings for a cleaner link). No repo push, no key risk.
+  3. Alternatives: Vercel (`npm i -g vercel && cd web && vercel`) or GitHub Pages (only if you've pushed the repo — first confirm `git status` shows NO .env, and rotate the key).
+  Put the final URL in the post body and the first comment (both currently say [PASTE YOUR LIVE LINK HERE]).
+  Best media = the native demo video; the link drives the click-through. LinkedIn shows the video as the media and the link as text.
 
-FOLLOW-UP:
-- If it gets traction, post a deeper technical write-up 2 days later: "How I built an eval to
-  check whether an AI is lying" — the essay is the artifact that travels furthest for hiring.
+**First 60 minutes matter most** (replies in the first hour = ~2.4x reach). Reply to every comment in the first hour, then every 2–3 hours for 24h. Ask follow-up questions back to keep threads alive (comments are weighted ~2x likes).
 
-AVOID:
-- "Excited to announce", superlatives ("game-changing"), or engagement bait ("comment YES") —
-  all penalized and off-brand for an honesty-first project.
+**Likely comments + reply seeds:**
+- "Isn't 66% agreement just a bad model?" → "That was my first read too — but agreement ≠ correctness. On card_arrival the 8B matched the human label 11/11 while Claude picked a near-duplicate intent. The incumbent isn't ground truth; that's the whole point."
+- "Why not just use a router like OpenRouter/Not Diamond?" → "Those route; they don't prove. This is the measurement layer that tells you WHICH slices are safe to route in the first place — and it's neutral, so it's not grading its own homework."
+- "What about tasks with no labels?" → "Then the frontier model's output is your reference (still works), and you add a synthesized gold set for the slices you care about. That's the Case 2 expansion."
+
+**Subtle job-search signal (optional):** if you want it, add one line above the closing question: "This is the kind of problem I love as an AI PM — turning a fuzzy 'is it good enough?' into something measurable." Only if it feels natural; the work should carry it.
+
+**Follow-up:** if it gets traction, post a 2-days-later deep dive on the "agreement ≠ ground truth" finding alone — that idea can stand as its own post.

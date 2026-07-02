@@ -6,14 +6,21 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+*.egg-info/
+dist/
 
-# Local eval output
-benchmark/last_results.json
+# SwitchProof — regenerable artifacts
+switchproof/data/.pred_cache.jsonl
+switchproof/data/banking77_sample.jsonl
+SWITCH_REPORT.md
 
-# Durable verdict cache (regenerable; can be large)
-benchmark/.verdict_cache.jsonl
+# React app
+web/node_modules/
+web/dist/
 
-# Generated benchmark sets (regenerable)
-benchmark/answers_generated.jsonl
-benchmark/answers_hard.jsonl
-benchmark/.combined.jsonl
+# Keep web/public/report.json committed so the app renders out of the box.
+
+# Archived verifier — regenerable caches
+archive/verifier/benchmark/.verdict_cache.jsonl
+archive/verifier/benchmark/.combined.jsonl
+archive/verifier/benchmark/last_results.json
